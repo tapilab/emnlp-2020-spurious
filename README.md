@@ -1,4 +1,4 @@
-Experiments for EMNLP_2020 paper: **Identifying Spurious Correlations for Robust Text Classification**
+Experiments for EMNLP_2020 paper: **[Identifying Spurious Correlations for Robust Text Classification](https://arxiv.org/pdf/2010.02458.pdf)**
 
 #### Datasets summary
  
