@@ -5,6 +5,8 @@ import requests, tarfile
 from io import BytesIO
 import pandas as pd
 import pickle
+import numpy as np
+import random
 
 class Dataset:
     def __init__(self, X, y, vec, df, moniker):
@@ -102,7 +104,8 @@ def get_kindle():
 #     return df
 
 def get_toxic_comment():
-    df = pickle.load(open("/data/zwang/2020_S/Toxic/Concat_last4_emb/V_6_shortSents/toxic_short_sents.pickle",'rb'))
+#     df = pickle.load(open("/data/zwang/2020_S/Toxic/Concat_last4_emb/V_6_shortSents/toxic_short_sents.pickle",'rb'))
+    df = pickle.load(open("/data/zwang/2020_S/EMNLP/V_6_shortSents/toxic_short_sents.pickle",'rb'))
     df = df.sample(frac=1)
     df.reset_index(drop=True,inplace=True)
     
